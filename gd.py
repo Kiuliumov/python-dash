@@ -19,6 +19,6 @@ class Client:
         if not isinstance(game_version, int):
             raise TypeError("game_version must be an integer")
         if game_version < 10:
-            raise ValueError("game_version must be at least 10")
+            raise ValueError("game_version must be at least 1.0")
 
         self.__game_version = game_version
